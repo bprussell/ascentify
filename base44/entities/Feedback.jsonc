@@ -1,0 +1,38 @@
+{
+  "name": "Feedback",
+  "type": "object",
+  "properties": {
+    "new_hire_id": {
+      "type": "string"
+    },
+    "new_hire_name": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "onboarding_process",
+        "training_quality",
+        "manager_support",
+        "tools_access",
+        "culture_fit",
+        "general"
+      ],
+      "default": "general"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "week_number": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "required": [
+    "new_hire_id",
+    "rating"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Resource",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "policy",
+        "training",
+        "guide",
+        "video",
+        "template",
+        "faq"
+      ],
+      "default": "guide"
+    },
+    "department": {
+      "type": "string"
+    },
+    "file_url": {
+      "type": "string"
+    },
+    "link_url": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "category"
+  ]
+}

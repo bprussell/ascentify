@@ -1,0 +1,53 @@
+{
+  "name": "TrainingSession",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "time": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "default": 60
+    },
+    "facilitator": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "max_attendees": {
+      "type": "number"
+    },
+    "attendee_ids": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "orientation",
+        "technical",
+        "compliance",
+        "culture",
+        "team_meeting"
+      ],
+      "default": "orientation"
+    }
+  },
+  "required": [
+    "title",
+    "date"
+  ]
+}
